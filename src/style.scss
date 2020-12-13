@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import "~bootstrap/scss/bootstrap";
+
+
+$primary-blue: #081BE5;
+$primary-yellow: #FED530;
+$primary-bg: #E8A295;
+$primary-black: #222323;
+$secondary-bg : #fbf8f5;
+
+body {
+  background-color: white;
+
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  color: $primary-blue;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  color: $primary-blue;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.banner {
+
+  background-image: url("https://cdn.shopify.com/s/files/1/0816/7567/t/9/assets/drop-bottle-hero--desktop.jpg?v=15023622157808188677");
+  background-color: $primary-bg;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  padding-top: 8%;
+  padding-bottom: 15%;
+
+
+}
+
+.banner-title {
+  display: flex;
+  padding: 6%;
+
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.banner-sub {
+  font-family: "Open Sans";
+  color: $primary-blue;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+
+  img {
+margin-right: 10px;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.btn-warning {
+  border-radius: 50px;
+  background-color: $primary-yellow;
+  color: $primary-blue;
+  padding: 12px 30px;
+  font-size: 1.25rem;
+}
+
+.mobile-img {
+  display: none;
+}
+
+.bounce-arrow {
+  position: absolute;
+  left: 50%;
+  margin-top: 12%;
+  animation-name: bounce-1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  height: 5px;
+}
+
+@keyframes bounce-1 {
+  0% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.intro {
+  padding: 60px 50px;
+}
+
+.intro-text {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto;
+
+  p {
+    font-size: 1.75rem;
+  }
+}
+
+.brands-logo {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.logo-img {
+  width: 100%;
+  height: auto;
+  padding: 0 30px;
+}
+
+.product-display-bg {
+  background-color: $secondary-bg;
+  padding: 50px 50px;
+}
+
+.product-display {
+  display: flex;
+  align-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-top: -212px;
+}
+
+.col1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: -50px;
+  padding: 0 20px;
+}
+
+.col1-title {
+  p {
+    font-family: 'Open Sans', sans-serif;
+    color: $primary-black;
+    font-weight: 300;
+  }
+
+  h2 {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 0px;
+  }
+
+  .underline::before {
+    content: "";
+    position: absolute;
+    background: #FED530;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 15px;
+  }
+
+}
+
+.price {
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  color: $primary-black;
+  font-weight: 600;
+  margin-top: 20px;
+  font-size: 1.15rem;
+}
+
+.original-price {
+  margin-right: 10px;
+}
+
+.discounted-price {
+  color: $primary-blue;
+}
+
+.product-discription {
+  margin: 20px 0px;
+  margin-right: 70px;
+
+  div {
+    font-size: 1.15rem;
+  }
+
+  ul {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    list-style: none;
+    padding: 0;
+
+  }
+
+  ul li::before {
+    content: '✓ ';
+    color: $primary-blue;
+    font-size: 1.45rem;
+  }
+
+}
+
+.button-option {
+
+  display: flex;
+  margin-bottom: 13px;
+
+}
+
+.btn-selection {
+  border-radius: 10px;
+  border-color: #efefef;
+  background-color: white;
+  color: $primary-black;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 4px;
+  padding: 15px 12px;
+  position: relative;
+  
+}
+
+.btn-blue {
+  background: $primary-blue;
+  color: white;
+}
+
+ .btn-selection:focus {
+   background-color: $primary-blue;
+   color: white;
+ } 
+
+
+
+.discount-sign {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: -12px;
+  z-index: 1;
+  background-color: $primary-yellow;
+  border-radius: 10px;
+  padding: 1px 5px;
+  color: $primary-black;
+}
+
+.button-cart {
+  margin-right: 70px;
+}
+
+.btn-buy {
+  display: block;
+  width: 100%;
+  border-radius: 50px;
+  background-color: $primary-yellow;
+  margin: 10px 0px;
+}
+
+.btn-add-to-cart {
+  display: block;
+  width: 100%;
+  border-radius: 50px;
+  margin-bottom: 30px;
+  border-color: #efefef;
+}
+
+a:link {
+  text-decoration: underline;
+
+}
+
+.col2 {
+  max-width: 50%;
+  padding: 0 20px;
+  position: relative;
+
+}
+
+.carousel {
+  z-index: 2;
+
+}
+
+.ball-bg {
+  position: absolute;
+  width: 68%;
+  bottom: -78px;
+  right: -100px;
+  z-index: 1;
+
+}
+
+.image {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+
+}
+
+//Large devices (tablets, less than 992px)
+@include media-breakpoint-down(md) {
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .product-display {
+    flex-wrap: wrap;
+    margin-top: -130px;
+  }
+
+  .col2 {
+    max-width: 100%;
+    order: -1;
+  }
+
+  .ball-bg {
+    bottom: -90px;
+  }
+
+  .col1 {
+    margin-top: 0px;
+  }
+
+  .button-option {
+    justify-content: space-between;
+  }
+
+  .btn-selection {
+    width: 100%;
+  }
+
+  .button-cart {
+    margin-right: 0px;
+  }
+
+  .product-discription {
+    margin-right: 0px;
+  }
+}
+
+//Small devices (Landscape phone, less than 768px)
+@include media-breakpoint-down(sm) {
+
+  .banner {
+    background-image: none;
+    padding-bottom: 0%;
+  }
+
+  .banner-title {
+    align-items: center;
+
+  }
+.banner-sub{
+flex-direction: column;
+margin-top: 15px;
+
+img {
+  margin-bottom: 10px;
+}
+}
+
+  .mobile-img {
+    display: initial;
+    width: 100%;
+    height: auto;
+  }
+
+  .bounce-arrow {
+    margin-top: -5%;
+  }
+
+  .brands-logo {
+    max-width: initial;
+    padding-left: 0;
+  }
+
+  .hide-small {
+    display: none;
+  }
+
+  .logo-img {
+    width: 100%;
+    height: auto;
+    padding: 0 10px;
+  }
+}
+
+//x-small devices (portrait phones, less than 576px)
+@include media-breakpoint-down(xs) {
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .banner-sub {
+    font-size: 1rem;
+  }
+
+  .intro-text {
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .price {
+    order: 2;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .button-option {
+    order: 3;
+    min-width: 300px;
+  }
+
+  .button-cart {
+    order: 4;
+  }
+
+  .details {
+    order: 5;
+  }
+
+  .discount-sign {
+    font-size: 0.8rem;
+    padding: 0px;
+  }
+}
